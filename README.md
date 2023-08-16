@@ -23,7 +23,7 @@ This is a basic todo list application built using React. It allows users to add 
 ## Getting Started
 To run the app locally, follow these steps:
 
-1. Clone the repository: `https://github.com/adarsh7123/To-Do-List.git`
+1. Clone the repository: `https://github.com/adarsh7123/React-To-Do-List.git`
 2. Navigate to the project directory: `cd todo-list-app`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm start`
