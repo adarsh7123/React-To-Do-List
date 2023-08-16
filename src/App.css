@@ -1,0 +1,146 @@
+
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background-color: #f2f2f2; 
+  font-family: Arial, sans-serif;
+
+
+  background-image: url('https://img.freepik.com/free-vector/blank-landscape-scene-nature-park-sunset-time_1308-61312.jpg?w=1380&t=st=1692120294~exp=1692120894~hmac=d66cfe0693bdba5e0c330a8b0927986797ce08776636047f5efdca87c97fc2c2');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+}
+
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.title{
+  color:#5f2c71;
+  
+}
+
+
+.addTask {
+  background-color:#966cf8c2;
+  width: 40vw;
+  color: #700098; /* Dark gray text */
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(82, 0, 134, 0.8);
+}
+
+.addTask h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+
+input {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+
+input:focus {
+  outline: none;
+  border-color: #b18fff;
+}
+
+
+button {
+  border: none;
+  background: none; 
+  color: rgb(0, 0, 0);
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+button:hover {
+  background-color:  #ffbd0f; 
+  color: #fff; 
+}
+
+.complete-button:hover {
+  background-color:  #35f85cd7;
+}
+
+.delete-button:hover {
+  background-color:  #f53737ce; 
+}
+
+
+.List {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+
+.task {
+  width: 100%;
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.task.completed {
+  background-color: #e8f7e8; 
+  border-color: #35f85c;} 
+ 
+
+  
+
+.task:hover {
+  background-color: #f5f5f5; 
+  transform: translateY(-5px);
+}
+
+
+.delete-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.task button {
+  margin: 10px;
+  font-size: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .List {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .addTask {
+    width: 80vw;
+  }
+}

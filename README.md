@@ -1,4 +1,4 @@
-# Todo List App
+## Todo List App
 
 Welcome to my Todo List App!
 A  React-based todo list application.
